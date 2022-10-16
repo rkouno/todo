@@ -28,13 +28,15 @@ $ git config --global user.name rkouno
 $ git config --global user.email rkouno@odp.co.jp
 $ git status
 $ git add --all .
-$ git commit -m "My Django Girls app, first commit"
-$ git remote add origin https://github.com/rkouno/todoapps.git
+$ git commit -m "app, first commit"
+$ git remote add origin https://github.com/rkouno/todo.git
 $ git push -u origin master
 --pythonanywhere--
 $ pip3.7 install --user pythonanywhere
 $ pip3.7 install --user pythonanywhere https://github.com/rkouno/todoapps.git
 $ pa_autoconfigure_django.py --python=3.10 
+--再インストール--
+pa_autoconfigure_django.py --nuke --python=3.6 https://github.com/rkouno/todo.git
 ========================================
 ===========アプリケーション作成===========
 --アプリケーション作成--
