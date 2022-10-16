@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'anime.apps.AnimeConfig',
+    'book.apps.BookConfig',
 ]
 
 MIDDLEWARE = [

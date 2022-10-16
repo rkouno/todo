@@ -47,3 +47,6 @@ pa_autoconfigure_django.py --nuke --python=3.6 https://github.com/rkouno/todo.gi
 python manage.py makemigrations anime
 python manage.py migrate anime
 ========================================
+
+$ workon <your-pythonanywhere-domain>.pythonanywhere.com
+(ola.pythonanywhere.com)$ python manage.py collectstatic
