@@ -44,9 +44,15 @@ pa_autoconfigure_django.py --nuke --python=3.6 https://github.com/rkouno/todo.gi
 --setting.py INSTALLED_APPS add--
 'anime.apps.AnimeConfig',
 --create table--
-python manage.py makemigrations anime
-python manage.py migrate anime
+python manage.py makemigrations book
+python manage.py migrate book
+========================================
+===========追加インストール===========
+pip install requests
+pip install beautifulsoup4
 ========================================
 
-$ workon <your-pythonanywhere-domain>.pythonanywhere.com
+===========静的ファイルの読み込み===========
+$ workon rkouno.pythonanywhere.com
 (ola.pythonanywhere.com)$ python manage.py collectstatic
+========================================

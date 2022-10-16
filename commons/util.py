@@ -4,8 +4,8 @@ import re
 import shutil
 import urllib.parse
 
-# import requests
-# from bs4 import BeautifulSoup
+import requests
+from bs4 import BeautifulSoup
 from genericpath import isdir, isfile
 
 
@@ -44,9 +44,8 @@ class utils:
     Webスクレイピング
     """
     def WebScraping(url):
-        # req = requests.get(url)
-        # html = BeautifulSoup(req.content, 'html.parser')
-        html = ''
+        req = requests.get(url)
+        html = BeautifulSoup(req.content, 'html.parser')
         return html
     """
     エンコード

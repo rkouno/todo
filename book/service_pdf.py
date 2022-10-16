@@ -2,7 +2,6 @@ from .models import Workbook
 from commons.const import appconst
 from commons.util import utils
 
-
 def getList():
     # 空フォルダの削除
     utils.folderDelete(appconst.FOLDER_TORRENT)
